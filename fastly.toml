@@ -1,0 +1,12 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["jacques@fudge.ai"]
+description = ""
+language = "rust"
+manifest_version = 2
+name = "ce-early-hints"
+service_id = ""
+
+[scripts]
+  build = "cargo build --bin fastly-compute-project --release --target wasm32-wasi --color always"
